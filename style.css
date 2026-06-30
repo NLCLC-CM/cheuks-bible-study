@@ -97,9 +97,9 @@ label {
     display: block;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 80rem) {
     article {
-        width: 60rem;
+        width: 80rem;
         margin: 2rem auto;
     }
 
