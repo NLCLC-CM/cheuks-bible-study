@@ -9,6 +9,7 @@
     --god-color: red;
     --circ-color: lavender;
     --free-color: green;
+    --speech-color: orange;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +24,7 @@
         --god-color: #f38ba8;
         --circ-color: #b4befe;
         --free-color: #a6e3a1;
+        --speech-color: #fab387;
     }
 }
 
@@ -130,6 +132,10 @@ label {
 
 .god {
     color: var(--god-color);
+}
+
+.speech {
+    color: var(--speech-color);
 }
 
 .repeating {
