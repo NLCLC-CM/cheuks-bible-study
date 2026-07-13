@@ -147,3 +147,7 @@ label {
     margin-left: 2rem;
     text-indent: -2rem;
 }
+
+section#form-controls {
+    display: flex;
+}
