@@ -32,6 +32,7 @@
 
       <ul>
         <li>A friend is staying over at your place for the night. What would you do?</li>
+        <li>Have you ever encountered a situation where a friend "put you on the table"?</li>
       </ul>
 
       <p><strong>Possible application questions</strong></p>
@@ -56,7 +57,7 @@
           (<a href="#v1">19:1</a>-<a href="#v9">9</a>)
         </li>
         <li>
-          Bethlehem to Gibeah: Refusing the Enter Jerusalem
+          Bethlehem to Gibeah: Refusing to Enter Jerusalem
           (<a href="#v10">19:10</a>-<a href="#v21">21</a>)
         </li>
         <li>
@@ -119,9 +120,10 @@ him three days; they feasted and drank and slept.
             </td>
             <td>
               <p>
-              This is a pattern. We start Judges 18:1 and Judges 19:1 with the same "there was no king in
-              Israel". Meaning that Israelites don't see God as king over them. This sentence also echoes
-              the ending in Judges 21:25.
+              This is a pattern. We start <bible-link>Judges 18:1</bible-link> and
+              <bible-link>Judges 19:1</bible-link> with the same "there was no king in Israel". Meaning
+        that Israelites don't see God as king over them. This sentence also echoes the ending in
+        <bible-link>Judges 21:25</bible-link>.
               </p>
 
               <p>
@@ -390,6 +392,39 @@ ate and drank together. But
               the middle east, once you take them in, you are responsible for their well-being and safety.
               <custom-footnote>Through the Bible with Pastor Paul, Judges 19-21.</custom-footnote>
               </p>
+
+              <p>
+              Middle-Eastern hospitality is culturally and almost fundamentally different from Western
+              hospitality. But one of the interpretations essentially boils down to the following:
+              <custom-footnote>
+                Hobbs, Hospitality in the First Testament and the 'Teleological Fallacy', 11.
+              </custom-footnote>
+              </p>
+
+              <ul>
+                <li>Hosts have responsibility to offer hospitality to strangers.</li>
+                <li>Hosts transform an invited stranger from potential threat to ally.</li>
+                <li>Hospitality can only be offered by male heads of house.</li>
+                <li>Refusal can be considered an affront to the host's honour.</li>
+                <li>
+                  The guest must not ask for anything, but is expected to entertain with news,
+                  predictions of good fortune, or gracious responses based on what he has been given. The
+                  host provides the best he has available, and must not ask personal questions to the
+                  guest.
+                </li>
+                <li>
+                  The guest remains under the protection of the host until they have left the zone of
+                  obligation of the host.
+                </li>
+              </ul>
+
+              <p>
+              Recipients of hospitality are engaged in travel. Travellers do not travel for leisure.
+              Rather, they travel because of strife, plague, and other negative conditions.
+              <custom-footnote>
+                Hobbs, Hospitality in the First Testament and the 'Teleological Fallacy', 17.
+              </custom-footnote>
+              </p>
             </td>
           </tr>
 
@@ -481,38 +516,6 @@ ate and drank together. But
               </p>
             </td>
             <td>
-              <p>
-              Middle-Eastern hospitality is culturally and almost fundamentally different from Western
-              hospitality. But one of the interpretations essentially boils down to the following:
-              <custom-footnote>
-                Hobbs, Hospitality in the First Testament and the 'Teleological Fallacy', 11.
-              </custom-footnote>
-              </p>
-
-              <ul>
-                <li>Hosts have responsibility to offer hospitality to strangers.</li>
-                <li>Hosts transform an invited stranger from potential threat to ally.</li>
-                <li>Hospitality can only be offered by male heads of house.</li>
-                <li>Refusal can be considered an affront to the host's honour.</li>
-                <li>
-                  The guest must not ask for anything, but is expected to entertain with news,
-                  predictions of good fortune, or gracious responses based on what he has been given. The
-                  host provides the best he has available, and must not ask personal questions to the
-                  guest.
-                </li>
-                <li>
-                  The guest remains under the protection of the host until they have left the zone of
-                  obligation of the host.
-                </li>
-              </ul>
-
-              <p>
-              Recipients of hospitality are engaged in travel. They aren't referring to a friendly
-              neighbourhood BBQ.
-              <custom-footnote>
-                Hobbs, Hospitality in the First Testament and the 'Teleological Fallacy', 17.
-              </custom-footnote>
-              </p>
             </td>
           </tr>
 
@@ -685,7 +688,8 @@ ate and drank together. But
               <p>
               In
               <bible-link>1 Samuel 11:7</bible-link>,
-              Saul summons a militia with 12 parts of an ox to free Jabesh Gilead.
+              Saul summons a militia with 12 parts of an ox to free Jabesh Gilead. This can be another jab
+              at Saul.
               </p>
             </td>
           </tr>
@@ -759,7 +763,7 @@ ate and drank together. But
   <script>
     const msgElements = document.getElementsByClassName('msg');
     const msgToggle = document.getElementById('msg-toggle');
-    msgToggle.addEventListener('input', e => {
+    msgToggle.addEventListener('change', e => {
       const shouldDisplayMsg = e.target.checked;
       for (const e of msgElements) {
         if (shouldDisplayMsg) {
@@ -769,6 +773,7 @@ ate and drank together. But
         }
       }
     });
+    msgToggle.dispatchEvent(new Event('change'));
 
     const bibleLinks = document.getElementsByTagName('bible-link');
     const versionSelector = document.getElementById('versionSelector');
